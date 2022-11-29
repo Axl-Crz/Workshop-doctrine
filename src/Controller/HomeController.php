@@ -14,7 +14,7 @@ class HomeController extends AbstractController
     {
         
         return $this->render('home/index.html.twig', [
-            'squirrel' => $squirellRepository->findAll(),
+            'squirrels' => $squirellRepository->findAll(),
         ]);
     }
 }
